@@ -5,32 +5,28 @@
 \chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}
 \label{ch:inleiding}
 
-De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de inleiding~\autocite{Pollefliet2011}:
-
-\begin{itemize}
-  \item context, achtergrond
-  \item afbakenen van het onderwerp
-  \item verantwoording van het onderwerp, methodologie
-  \item probleemstelling
-  \item onderzoeksdoelstelling
-  \item onderzoeksvraag
-  \item \ldots
-\end{itemize}
+De Insurance Technology is een vooruitstrevende technologie die in de verzekeringswereld gebruikt wordt. Verzekeringsmaatschappijen willen voortdurend op kosten en tijd besparen, dit is net waar de InsurTech zich op focust. Eerst en vooral werd onderzocht worden hoe een standaard verzekeringsproces precies verloopt en welke documenten hiervoor ingevuld moeten worden. Vervolgens werd gezocht naar welke stadia in dit proces geautomatiseerd of versneld kunnen worden. Dan zal voor deze onderdelen een automatisatie gezocht worden die men verwerft via data die men via webscraping of het gebruik van API’s op externe webpagina’s verkrijgt. Het onderzoek zou een oplossing moeten bieden voor het lange “invulproces” die de klant en de makelaar moeten doorlopen om een verzekeringscontract op punt te zetten. De verzekeringswereld is nog vrij conservatief, vele contracten vergen veel contact met de klant. In de toekomst zal dit veranderen, het onderzoek zou een steentje moeten bijdragen aan de mogelijke methodes waarin dit proces kan versneld worden. tools zoals Selenium en Puppeteer gebruikt worden. Bij het gebruik API’s maakt dit onderzoek gebruik van de requests library in Python indien webscraping niet nodig of mogelijk is. Verder zal voor het onderzoeken van externe API’s de Google Developer Tools een hulp bieden in het uitwerken van de toepassingen. Als eindresultaat zal een minimalistische simulatie aantonen dat de toepassing wel degelijk innovatief is.
 
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}
 \label{sec:probleemstelling}
 
-Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's,'' systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
+De verzekeringswereld is berucht om zijn conservatisme en heeft de afgelopen vijftig jaar zelden tot geen technologische vooruitgang geboekt.
+In deze wereld willen de verzekeringsmakelaars voortdurend op geld en tijd sparen. Het liefst herinvesteren ze deze dan terug in hun klanten om deze tevreden te houden. De nood aan nieuwe technologieën die makelaars deze herinvestering kunnen aanbieden is erg van belang. Wegens dat deze Insurance technologie nog vrij nieuw is, liggen er nog vele kansen voor het grijpen voor software ontwikkelaars om een tool of toepassing te ontwikkelen die het voor deze makelaars, alsook uiteindelijk de klant, gemakkelijker zou maken een verzekeringscontract af te sluiten. Vandaar gaat dit onderzoek uit op één of meerdere toepassingen die de efficiëntie in de verzekeringswereld technologisch kan bevorderen. Dit kan gaan van het vereenvoudigen van formulieren tot het automatiseren van manuele herhaaldelijke taken door middel van webscraping.
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}
 \label{sec:onderzoeksvraag}
 
-Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
+Het uiteindelijke doel van dit onderzoek bestaat eruit om een inzicht te geven over welke toepassingen mogelijk zijn in de Insurtech via webscraping met daarbovenop nog een prototype van een onbestaande toepassing. Om een zo duidelijk mogelijk antwoord te bieden op de onderzoeksdoelstelling van dit onderzoek, werden volgende onderzoekvragen opgesteld:
+\begin{itemize}
+	\item Welke toepassingen bestaan reeds in de InsurTech?
+	\item Welke nieuwe toepassingen zijn er mogelijk via webscraping?
+	\item Wat zijn de voordelen van deze nieuwe toepassing?
+\end{itemize}
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}
 \label{sec:onderzoeksdoelstelling}
 
-Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk. Gaat het bv. om een proof-of-concept, een prototype, een verslag met aanbevelingen, een vergelijkende studie, enz.
+Het beoogde eindresultaat van dit onderzoek omvat minstens één nuttige technologie waarbij webscraping werd gebruikt die het werk voor een verzekeringsmakelaar bevordert. De efficiëntie is merkbaar doordat een manueel proces geautomatiseerd of geoptimaliseerd is dankzij de gebruikte toepassing. Deze toepassing is door middel van een prototype onderzocht, geschreven in de programmeertaal Python.
 
 \section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}
 \label{sec:opzet-bachelorproef}
@@ -41,10 +37,14 @@ Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor suc
 
 De rest van deze bachelorproef is als volgt opgebouwd:
 
-In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie.
+In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie. Hierbij worden de bestaande toepassingen van de Insurtech besproken.
 
-In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
+In Hoofdstuk~\ref{ch:methodologie} wordt het onderzoek voorbereid en de toepassingen besproken om een antwoord te kunnen formuleren op een deel van de onderzoeksvragen.
 
 % TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
+
+In Hoofdstuk~\ref{ch:voorbereiding-onderzoek} wordt keuze gemaakt tussen de verschillende tools en mogelijkheden, opgelijst in voorgaande hoofdstukken.
+
+In Hoofdstuk~\ref{ch:prototype} wordt een prototype van een onbestaande toepassingen ontwikkeld waarbij webscraping en mogelijke struikelblokken worden toegelicht.
 
 In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.

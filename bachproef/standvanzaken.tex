@@ -7,11 +7,60 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+In dit hoofdstuk worden de verschillende termen die aan de InsurTech en Webscraping gebonden zijn uitvoerig besproken.
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz. naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
-Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
+\section{InsurTech}
+Allereerst wordt de term InsurTech verklaard.
+InsurTech is een afkorting of samenstelling van insurance en technology.
+Concreet is dit het introduceren of gebruik maken van technologie in de verzekeringswereld.
+De InsurTech is in principe een specialisatie van FinTech, ofwel Financial Technology.
+Terwijl FinTech zich op alle financiële technologieën focust, beperkt de InsurTech zich tot die van de verzekeringswereld.
+Een duidelijk verschil is dat de FinTech onder meer ook nog over technologie in banken gaat.
+Een verzekering wordt door \textcite{Trowbridge1975} omschreven als een risico-overdracht waarbij
+een klant het risico overdraagt aan een verzekeringsmaatschappij in ruil voor een overeengekomen bedrag. 
+Het doel van de klant in dat geval is de negatieve financiële gevolgen te beperken van een onzekere toekomstige gebeurtenis.
+\graphicspath{ {./img/} }
+\begin{figure}[H]
+	\centering
+	\includegraphics{creately_basic_verzekering}
+	\caption{Verzekering visualisatie volgens \textcite{Trowbridge1975}}
+\end{figure}
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+InsurTech is nog vrij nieuw, zo worden er regelmatig nieuwe toepassingen ontwikkeld die de efficiëntie van een verzekeringsbedrijf bevordert. Zo wijst een artikel van \textcite{Institute2020} erop dat de term is opgekomen in 2010, toen de hoofdimplementatie eerder prijsvergelijkingen tussen verschillende verzekeringsmaatschappijen was. Tegenwoordig reiken de toepassingen van InsurTech veel verder dan alleen prijsvergelijkingen, zoals verzekeringsadvies bieden op basis van verzamelde data. Een ander artikel uit 2021 of \textcite{InsuranceCommissioners2021} toont aan dat InsurTech startups de voorbije decennia een geschatte 16,5 miljard dollar aan investeringen hebben verzameld en dat dit bedrag in de toekomst alleen maar zal groeien. Een literatuurstudie van \textcite{inproceedings} concludeert dat de verzekeringsmaatschappijen vooral kosten, in tijd en geld, verliezen door het analyseren van de risico’s die een klant loopt om zo de juiste verzekeringen aan te raden. Door InsurTech toepassingen is het beheren van verzekeringen en de klantencommunicatie niet alleen vergemakkelijkt, maar ook verbeterd. Wat webscraping en datamining betreft bestaat er reeds een grote variëteit aan technologie en tools. Een recent onderzoek duidt aan dat Selenium en Puppeteer tussen de populaire webscrapers zitten. (Saurkar e.a., 2018) Er zal zowel voor een toepassing voor webscraping, als API gebruik gezocht worden bij het vinden van een toepassing die de klantenervaring kan bevorderen.
 
-\lipsum[7-20]
+
+
+\section{Webscraping}
+
+Allereerst gaan we terug in de tijd, naar het ontstaan van webscraping. Webscraping dateert al van het begin van het World Wide Web, ontstaan in 1989, toen het internet voor het eerst werd geïntroduceerd. Nog geen 4 jaar later, in 1993, werd al voor het eerst de term “webscraping” gebruikt. Het jaar waarin een groep MIT (Massachusetts Institution of Technology) studenten als schoolproject de omvang van het internet probeerden in te schatten. Hun allereerste webscraper, de World Wide Web Crawler, werd de basis van vele andere webscrapers die nog in de toekomst zouden volgen. In datzelfde jaar werd alsook de allereerste zoekmachine op het internet uitgevonden door Jonathan Fletcher, de “vader van de zoekmachine”. Deze student aan de University of Sterling te Schotland ontwierp onbewust de voorloper van Google genaamd Jumpstation. \autocite{farholt2021less} Mettertijd is het gebruik van webscraping en de gebruikte toepassingen drastisch gewijzigd. Zo worden tegenwoordig webscrapers gebruikt om interactie van een gebruiker te simuleren om webpagina’s uit te testen vanuit het standpunt van de eindgebruiker.
+Webscraping is reeds heel wat geëvolueerd, zo moet de technologie zich vaak aanpassen aan hoe webpagina’s eigenlijk opgebouwd zijn.
+Webscraping is het extraheren en indexeren van data in webpagina’s en deze vervolgens opslaan in een tekstbestand of databank. Webpagina’s bestaan uit tekst die in verschillende formaten beschikbaar is: als gewone tekst, in tabellen, ... De simpelste vorm van webscraping het kopiëren en plakken van tekst. Het is de taak van een webscraper deze data automatisch uit te lezen en te indexeren. Het crawlen of scrapingsproces op het internet bestaat er allereerst uit alle gewenste data uit te lezen om deze vervolgens in een gepast leesbaar formaat te structureren.\autocite{zhao2017web} Hoofdzakelijk wordt dit gebruikt om repetitieve taken te versnellen, zoals iedere subtitel van een pagina kopiëren en plakken. Het uitlezen kan op verschillende manieren gebeuren, afhankelijk van de desbetreffende webpagina. Echter is het niet hoofdzakelijk nodig altijd webscraping toe te passen. Soms beschikt de webpagina of service over een API, een acroniem voor Application Programming Interface. Dit is een set van functies en procedures gebruikt die één of meerdere taken vervuld met als doel door software gebruikt te worden. Dit maakt het voor programmeurs makkelijker en efficiënter om net de data die men nodig heeft uit de pagina te halen zonder overbodige data ook nog in te laden. Performantiegewijs heeft het gebruik van API’s op webpagina’s of services duidelijk de voorkeur. \autocite{10.2307/251584}
+Abstract kan het gebruik van webscraping vanalles inhouden. Kleinschalig kan dit gaan over het monitoren van real-time data met behulp van polling, wat een detectiesysteem kan inhouden die aanpassingen op websites detecteert. Tot grootschalig het voortdurend uitlezen van website data om een zoekmachine mee te bouwen. Zo kan Google of Bing aanzien worden als één grote webscraper, gebruikt om het internet uit te mappen. \autocite{snyder2003web}
+
+\begin{figure}[bH]
+	\centering
+	\includegraphics{webscraping_cycle}
+	\caption{webscraping structuur}
+\end{figure}
+
+
+\section{Datamining}
+
+Wanneer een onderzoek werkt met grote datasets, is het manueel nagaan van verbanden ingewikkeld en heeft de data dus als vereiste automatisch gecontroleerd te worden.
+Datamining bestaat uit het onderzoeken van bestaande data uit grote databanken, met als doel nieuwe data te genereren.
+Op zichzelf is datamining een proces waar, in een grote set data, onderzoek wordt gedaan naar nuttige, relevante data. Het vinden van patronen, algoritmes en afwijkingen in deze grote set data moet hierbij helpen. Het doel van de datamining techniek is om net ongekende patronen te vinden in de set data om deze vervolgens met elkaar te kunnen linken en structureren. Dit kan dan een antwoord bieden op business gerelateerde vragen die te tijd consumerend zijn om zelf op te lossen. \autocite{osman2019data} In detail kan dit logisch proces is onderverdeeld in 2 delen: het wetenschappelijke en het commerciële. Voornamelijk zijn toepassingen die het dataminen bevorderen in de insurtech voornamelijk gefocust op het commerciële. \autocite{hand2007principles}
+
+\section{Webscraping vs Datamining}
+
+Nu voorgaande termen onderling zijn besproken, wordt het verschil of de samenhang van beiden besproken. In het kort werd webscraping eerder omschreven als een data ophalen.  Terwijl webscraping eerder het ophalen van data is en formatteren doet het geen analyse of dataprocessing. Het is net de datamining die de opgehaalde data zal verrijken en hieruit conclusies, verbanden en verschillen uit zal halen. In feite kan web scraping dus gebruikt worden om datasets te creeëren waarop datamining wordt toegepast. Deze beiden vullen elkaar dus aan.
+
+
+\section{Tools}
+
+Bij webscraping is het belangrijk om de juiste tool te vinden die voldoet aan jouw benodigdheden.
+Zo is het bij dit onderzoek de bedoeling enkel webscrapers te gebruiken die draaien op de programmeertaal Python, dus is \href{https://nutch.apache.org}{Apache Nutch} bijvoorbeeld al niet van toepassing. Zo zijn er nog vele andere webscraping tools die \textcite{Sirisuriya2015} aanhaalt in haar studie.
+Bij een recent onderzoek naar de meestgebruikte tools in Python kwamen Selenium en Puppeteer als één van de populairste uit de bus. \autocite{Saurkar2018}
+Vandaar zal ook bij dit onderzoek deze tools gebruikt worden. Deze maken gebruik van webautomatie om hun taak te vervullen.
+
+\section{InsurTech mogelijkheden}
+wordt onderzocht...

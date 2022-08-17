@@ -3,24 +3,28 @@
 \section{Introductie} % The \section*{} command stops section numbering
 \label{sec:introductie}
 
-Hier introduceer je werk. Je hoeft hier nog niet te technisch te gaan.
-
-Je beschrijft zeker:
-
-\begin{itemize}
-  \item de probleemstelling en context
-  \item de motivatie en relevantie voor het onderzoek
-  \item de doelstelling en onderzoeksvraag/-vragen
-\end{itemize}
+De Insurance Technology is een vooruitstrevende technologie die in de verzekeringswereld gebruikt wordt.
+Verzekeringsmaatschappijen willen voortdurend op kosten en tijd besparen, dit is net waar de InsurTech zich op focust.
+Eerst en vooral zal onderzocht worden hoe een standaard verzekeringsproces precies verloopt en welke documenten hiervoor ingevuld moeten worden. Vervolgens zal gezocht worden naar welke stadia in dit proces geautomatiseerd / versneld kunnen worden.
+Dan zal voor deze onderdelen een automatisatie gezocht worden die men verwerft via data die men via webscraping of het gebruik van API’s op externe webpagina’s verkrijgt.
+Het onderzoek zou een oplossing moeten bieden voor het lange “invulproces” die de klant en de makelaar moeten doorlopen om een verzekeringscontract op punt te zetten.
+De verzekeringswereld is nog vrij conservatief, vele contracten vergen veel contact met de klant. In de toekomst zal dit veranderen, het onderzoek zou een steentje moeten bijdragen aan de mogelijke methodes waarin dit proces kan versneld worden.
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}
 \label{sec:state-of-the-art}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein. Dit kan bijvoorbeeld een literatuurstudie zijn. Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek?
+InsurTech is nog vrij nieuw, zo worden er regelmatig nieuwe toepassingen ontwikkeld die de efficiëntie van een verzekeringsbedrijf bevordert.
+Zo wijst een artikel van 2020 \textcite{Institute2020} erop dat de term is opgekomen in 2010, toen de hoofdimplementatie eerder prijsvergelijkingen tussen verschillende verzekeringsmaatschappijen was.
+Tegenwoordig reiken de toepassingen van InsurTech veel verder dan alleen prijsvergelijkingen, zoals verzekeringsadvies bieden op basis van verzamelde data.
+Een ander artikel uit 2021 \textcite{InsuranceCommissioners2021} toont aan dat InsurTech startups de voorbije decennia een geschatte 16,5 miljard dollar aan investeringen hebben verzameld en dat dit bedrag in de toekomst alleen maar zal groeien.
+Een literatuurstudie van Simon Grima \textcite{inproceedings} concludeert dat de verzekeringsmaatschappijen vooral kosten, in tijd en geld, verliezen door het analyseren van de risico’s die een klant loopt om zo de juiste verzekeringen aan te raden.
+Door InsurTech toepassingen is het beheren van verzekeringen en de klantencommunicatie niet alleen vergemakkelijkt, maar ook verbeterd.
+Wat webscraping en datamining betreft bestaat er reeds een grote variëteit aan technologie en tools.
+Een recent onderzoek duidt aan dat Selenium en Puppeteer tussen de populaire webscrapers zitten. \autocite{Saurkar2018} \cite
+Er zal zowel voor een toepassing voor webscraping, als API gebruik gezocht worden bij het vinden van een toepassing die de klantenervaring kan bevorderen.
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Doll1954}! Denk zeker goed na welke werken je refereert en waarom.
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -29,23 +33,36 @@ Verwijs bij elke introductie van een term of bewering over het domein naar de va
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag gerust gebruik maken van subsecties in dit onderdeel.
-
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
+Het onderzoek zal gevoerd worden in de programmeertaal Python.
+In deze taal zullen de verschillende webscraping tools zoals Selenium en Puppeteer gebruikt worden.
+Bij het gebruik API’s maakt dit onderzoek gebruik van de requests library in Python indien webscraping niet nodig of mogelijk is.
+Verder zal voor het onderzoeken van externe API’s de Google Developer Tools een hulp bieden in het uitwerken van de toepassingen.
+Als eindresultaat zal een minimalistische simulatie aantonen dat de toepassing wel degelijk innovatief is.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+Uit onderzoek moet blijven dat er reeds vele innovatieve toepassingen bestaan die gebruik maken van webscraping,
+maar dat deze niet publiek toegankelijk zijn.
+Er werden innovatieve toepassingen gevonden en ook gemaakt in python met behulp van de tools die relevant kunnen zijn in de InsurTech,
+hierbij zal ook telkens een demo zichtbaar zijn die aantoont dat dit wel degelijk ook de klantenervaring bevorderd.
+
+Bij het opmaken en invullen van digitale contracten voor een klant en verzekeringsmakelaar zou dankzij het onderzoek
+vlotter en dus efficiënter moeten verlopen om een verzekeringscontract af te sluiten.
+
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+Eerst en vooral verwacht het onderzoek dat er nog een grote open markt is voor nieuwe innovatieve toepassingen in de verzekeringswereld.
+Deze conclusie berust op het feit dat de InsurTech nog zo vernieuwend is en nog niet gestandaardiseerd is in ieder verzekeringsbedrijf.
+Met behulp van gevonden implementatie moet het onderzoek kunnen aantonen dat de contracten of gegevens die klanten moeten invullen deels geautomatiseerd kunnen worden…
+Uit het onderzoek wordt verwacht dat het voor klant en het verzekeringsbedrijf een significante verschil in bepaalde digitale contracten ziet, waarbij de klant veel minder het verzekeringsbedrijf zou moeten contacteren. Het digitaliseren en genereren van contracten zou dankzij het gebruik van de webscraping tools vlotter moeten verlopen.
+
 

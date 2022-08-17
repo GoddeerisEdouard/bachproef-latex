@@ -242,7 +242,7 @@ justification=raggedright]{caption}
 % Footers
 \lfoot{\sffamily\small\bfseries\@PaperType}%
 \cfoot{}%
-\rfoot{\includegraphics[height=1.1cm]{img/HOGENT_Logo_Pos_rgb.png}}%
+\rfoot{\includegraphics[height=1.1cm]{HOGENT_Logo_Pos_rgb.png}}%
 \renewcommand{\headrulewidth}{0pt}% % No header rule
 \renewcommand{\footrulewidth}{0pt}% % No footer rule
 
@@ -252,6 +252,6 @@ justification=raggedright]{caption}
 
 \RequirePackage[backend=biber,style=apa]{biblatex}
 \DeclareLanguageMapping{dutch}{dutch-apa}
-\addbibresource{bibliografie.bib}
+\addbibresource{voorstel.bib}
 
 \endinput
