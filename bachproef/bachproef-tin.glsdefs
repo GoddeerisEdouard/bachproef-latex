@@ -1,0 +1,28 @@
+\glsdefs@newdocentry{API}%
+{%
+name={API},%
+sort={API},%
+type={main},%
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={Application programming interface: een verzameling definities waarvan eeen computerprogramma kan communiceren met een ander programma of onderdeel},%
+descriptionplural={Application programming interface: een verzameling definities waarvan eeen computerprogramma kan communiceren met een ander programma of onderdeel},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

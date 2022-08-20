@@ -111,4 +111,40 @@
   year      = {2007},
 }
 
+@InCollection{cortis2019insurtech,
+  author    = {Cortis, Dominic and Debattista, Jeremy and Debono, Johann and Farrell, Mark},
+  booktitle = {Disrupting finance},
+  title     = {InsurTech},
+  pages     = {71--84},
+  publisher = {Palgrave Pivot, Cham},
+  year      = {2019},
+}
+
+@Article{obenshain_2004,
+  author    = {Obenshain, Mary K.},
+  title     = {Application of Data Mining Techniques to Healthcare Data},
+  doi       = {10.1086/502460},
+  number    = {8},
+  pages     = {690–695},
+  volume    = {25},
+  journal   = {Infection Control \& Hospital Epidemiology},
+  publisher = {Cambridge University Press},
+  year      = {2004},
+}
+
+@Article{agarwal2020real,
+  author  = {Agarwal, Sumit and Qian, Wenlan and Ren, Yuan and Tsai, Hsin-Tien and Yeung, Bernard Yin},
+  title   = {The real impact of FinTech: Evidence from mobile payment technology},
+  journal = {Available at SSRN 3556340},
+  year    = {2020},
+}
+
+@InProceedings{koprivica2018insurtech,
+  author    = {Koprivica, Marija},
+  booktitle = {2nd International Scientific Conference ITEMA},
+  title     = {Insurtech: challenges and opportunities for the insurance sector},
+  pages     = {619--625},
+  year      = {2018},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

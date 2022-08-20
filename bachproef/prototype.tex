@@ -1,7 +1,6 @@
 %%=============================================================================
 %% Prototype
 %%=============================================================================
-
 \chapter{\IfLanguageName{dutch}{Prototype}{}}
 \label{ch:prototype}
 
@@ -14,4 +13,88 @@ In dit hoofdstuk worden de bepaalde technieken van het voorgaande hoofdstuk uitg
 \label{sec:Gebruikte tools}
 
 Om het prototype op te stellen wordt eerst en vooral een set van tools opgelijst die binnen de werkomgeving gebruikt worden. Zo wordt er gekozen voor de programmeertaal Python.
-Bij webscraping is het belangrijk om de juiste tool te vinden die voldoet aan de benodigdheden binnen het project. Zo is het bij dit onderzoek de bedoeling enkel webscrapers te gebruiken die draaien op de programmeertaal Python, dus is Apache Nutch bijvoorbeeld al niet van toepassing. Zo zijn er nog vele andere webscraping tools die \textcite{Sirisuriya2015} aanhaalt in haar studie. Bij een recent onderzoek naar de meestgebruikte tools in Python kwamen Selenium en Puppeteer als één van de populairste uit de bus. \autocite{Saurkar2018} Vandaar zal ook bij dit onderzoek deze tools gebruikt worden. Deze maken gebruik van webautomatie om hun taak te vervullen.
+Bij webscraping is het belangrijk om de juiste tool te vinden die voldoet aan de benodigdheden binnen het project. Zo is het bij dit onderzoek de bedoeling enkel webscrapers te gebruiken die draaien op de programmeertaal Python. In de vooraf aangehaald in de Stand van zaken wordt gebruik gemaakt van een veel gebruikte webscraping tool die voldoet aan de eisen die voor dit onderzoek nodig zijn.
+% TODO mogelijks hier extra aanvullen waarom we voor Selenium kiezen
+
+\section{Toepassingen}
+% TODO voeg inleiding toe
+
+\subsection{Bestaande toepassingen}
+
+Om een nieuwe toepassing te ontwikkelen die InsurTech gerelateerd is, is het van belang op zoek te gaan naar bestaande toepassingen. Wegens dat toepassingen binnen de InsurTech op globaal niveau een brede waaier is om onderzoek op te doen, focust dit onderzoek zich eerder op de bestaande toepassingen in België. Er wordt op zoek gegaan naar een selectie van InsurTech bedrijven in België die publiekelijk online informatie verschaffen over de services die zij bieden. 
+
+Wanneer op het web gezocht wordt naar Belgische InsurTech bedrijven is een prominent resultaat \href{https://www.fintechbelgium.be/}{Fintech Belgium}. Deze gemeenschap, opgericht in 2015, wil zo veel mogelijk FinTech bedrijven, dus bedrijven (in)direct gerelateerd met de financiële service industrie, betrokken krijgen. Het doel van deze gemeenschap is de functionaliteit binnen de industrie te verbeteren alsook bestaande problemen aan te pakken door middel van hun connecties binnen en buiten het opgebouwde netwerk. Eén van de leden binnen het bedrijf is WeGroup, het InsurTechbedrijf dat reeds kort vermeld is in het Voorwoord. Voornamelijk worden de verzekeringstypes die het bedrijf dekt onderverdeeld in vier categorieën ofwel types. Zijnde autoverzekering, woonverzekering, familiale verzekering en rechtsbijstandverzekering.
+Het is van belang dat banken die verzekeringen bieden vaak een simulatie van een verzekeringscontract aan om klanten de kost van hun verzekering te laten inschatten en deze mogelijks te kunnen vergelijken.
+
+\subsubsection{Autoverzekering stappen}
+Zo is er voor de autoverzekering bij AXA: \href{https://www.fo.axa.be/eauto/risk?dsfns=customers.be.axa.retail.mobility.contract.new.auto&LANG=nl}{AXA autoverzekering}, ING: (\href{https://www.ing.be/nl/retail/insurance/vehicles/car-insurance}{ING autoverzekering}), KBC: (\href{https://www.kbcbrussels.be/retail/en/processes/vehicle/autoverzekering-simuleren.html}{KBC autoverzekering}), Baloise: \href{https://www.berekenjeautopremie.be/nl/Baloise/l/met-welke-wagen-rijdt-u}{Baloise autoverzekering} en vele andere banken / verzekeringsmaatschappijen een webpagina voorzien.
+Hierbij wordt eerst gekeken naar de nodige informatie per verzekeringstype.
+Wanneer wordt gekeken naar de indeling van autoverzekering wordt aan de klant een gelijkaardige indeling om van gegevens invullen om aan data van een klant te geraken en vervolgens een prijsberekening te doen.
+ 
+\begin{enumerate}[label=Stap \arabic*:]
+	\item Selecteer als het voertuig al dan niet ouder dan 2 jaar is
+	\item Vul mogelijks het chassisnummer in, indien niet mogelijk, vul info over auto in
+	info over auto: 
+	\begin{enumerate}
+		\item Brandstoftype
+		\item Eerste inschrijving
+		\item Merk
+		\item Model
+		\item Type
+	\end{enumerate}
+	\item Eénmaal dit allemaal ingevuld is wordt de cataloguswaarde (exclusief BTW) van het voertuig gevraagd.
+	Dit is de oorspronkelijke waarde van de auto exclusief btw, kortingen, opties en accessoires.
+\end{enumerate}
+Resultaat: eindbedrag voor autoverzekering
+
+\subsubsection{Woonverzekering stappen}
+\emph{Voor eigenaars}
+
+\begin{enumerate}[label=Stap \arabic*:]
+	\item selecteer indien u de eigenaar of huurder bent
+	\item vul het adres in van de te verzekeren woning
+	\item selecteer type woning
+	\item selecteer type huis of appartement
+	\item invullen extra info over huis of appartement
+	\item kiezen hoofdverblijf, verhuren, tweede verblijf, leegstaand
+	\item invullen aantal kamers
+	\item invullen andere ruimtes
+	\item bouwjaar
+	\item schade overstromingen afgelopen 5 jaar
+	\item selecteer welke schade of kosten wil je gedekt zijn
+\end{enumerate}      
+Resultaat: eindbedrag voor de woonverzekering
+
+\emph{Voor huurders}
+
+\begin{enumerate}[label=Stap \arabic*:]
+	\item selecteer indien u de eigenaar of huurder bent
+	\item vul het adres in van de te verzekeren woning
+	\item selecteer type woning (rij - open - halfopen)
+	\item selecteer type huis of appartement
+	\item vul maandelijkse huur in
+	\item vul meer informatie in over de woning ( kamers, andere ruimtes, bouwjaar, ... )
+	\item selecteer welke schade of kosten wil je gedekt zijn
+\end{enumerate}
+Resultaat: eindbedrag voor de woonverzekering
+
+\subsubsection{Rechtsbijstand stappen}
+
+
+\subsubsection{Familiale verzekering stappen}
+Opnieuw is er voor Belgische verzekeringsmaatschappijen invulformulier met data nodig waardoor een inschatting van kosten en dekking kan worden gemaakt.
+Hierbij wordt enkel de vraag gesteld als u verzekerd bent.
+
+
+\subsection{Replicatie toepassing}
+% TODO maak een replicatie van één van de invulprocessen voor het verkrijgen van een verzeringscontract
+
+\subsection{Klantenervaring verbeteren}
+% TODO vind andere toepassingen van insurtech
+
+
+\subsection{Data extractie}
+Met behulp van Python kunnen we met enkele lijnen code via Selenium Webdriver data ophalen van webpagina's om in het prototype te gebruiken en verwerken.
+Eén van de doelen van InsurTech is namelijk ook grote hoeveelheden aan data verwerken, waar de webscraper aan te pas komt.
+
+
