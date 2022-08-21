@@ -79,6 +79,7 @@ Resultaat: eindbedrag voor de woonverzekering
 Resultaat: eindbedrag voor de woonverzekering
 
 \subsubsection{Rechtsbijstand stappen}
+% TODO vul in
 
 
 \subsubsection{Familiale verzekering stappen}
@@ -87,10 +88,45 @@ Hierbij wordt enkel de vraag gesteld als u verzekerd bent.
 
 
 \subsection{Replicatie toepassing}
-% TODO maak een replicatie van één van de invulprocessen voor het verkrijgen van een verzeringscontract
+% TODO maak een replicatie van één van de invulprocessen voor het verkrijgen van een verzekeringscontract
+Om een toepassing van de InsurTech beter te begrijpen betreft een deel van het onderzoek het repliceren van het digitale invulproces van een verzekerings prijsberekening.
+In dit voorbeeld zal de autoverzekering worden gerepliceerd.
+Een opmerking is dat het onderzoek geen toegang heeft tot prijsberekeningen bij dit soort data, dus hier wordt voornamelijk gefocust op het efficiënt vragen van data aan de klant.
+
+Wanneer men de stappen van autoverzekering herziet wordt het merk en model gevraagd van de auto.
+Om alle verschillende soorten merken en modellen op te vragen is nood aan een gevulde databank.
+Online zijn verschillende websites beschikbaar die alle automerken en hun types opslaat.
+\href{https://www.car.info/en-se/brands}{car info} is daar één van.
+Er valt voornamelijk een lijst van auto's alsook het bouwjaar en dergelijke afbeeldingen op deze website te vinden.
+
+Het eerste wat gedaan moet worden op deze website is dus de data, zijnde alle automerken en hun modellen opslaan.
+Dit kan met behulp van de webscraper van Selenium in Python.
+In enkele lijnen code wordt per automerk gezocht naar de link die meer details biedt voor dit merk.
+Deze link leidt ons door naar alle info over dit merk, waardoor men de bestaande modellen en het bouwjaar kan opgeslagen worden.
+Na het ophalen van al deze data wordt dit opgeslagen in een databank, die later dankzij een zoekfunctie snel data kan verschaffen voor de aangevraagde zoektermen.
+Vragen zoals "Welke modellen bestaan er voor het merk Ferrari?" of "Welke auto's hebben geen gekend bouwjaar?".
+% TODO voeg afbeelding toe die opgehaalde data mooi uitmapt
+
+Nadat de data is opgeslagen en vlot toegankelijk is, wordt het invulformulier nagemaakt.
+Wegens dat deze replicatie meer gefocust op de functionaliteit van de toepassing dan naar de lay-out.
+Het is ook van belang dat dit formulier CORRECT ingevuld wordt en geen onzin kan meegegeven worden.
+Zoals een jaartal van eerste inschrijving meegeven dat in de toekomst ligt.
+
+% TODO voeg afbeelding toe van invulformulier met korte lijst bestaande modellen (zodat dit op een tamelijk kleine screenshot past)
+% deze afbeelding moet ook aantonen dat het aan validatie doet
+
+Er valt duidelijk te zien dat dankzij dit digitaal formulier een aantal factoren die voor verwarring of ongeldigheid zouden kunnen zorgen bij ontvangst van het verzekeringskantoor worden geëlimineerd.
+Zo is er strikte validatie op de velden, en niet alleen op velden die vrij in te vullen zijn door de eindgebruiker.
+Zo worden ook bepaalde velden automatisch ingevuld, of wordt er een selectie aan mogelijke antwoorden gepresenteerd.
+
+In het kort:
+door basisregels voor gegevensvalidatie in te stellen, kan een bedrijf georganiseerde normen aanhouden die het werken met gegevens efficiënter maken.
+De gegevensvalidatie op zich kan er ook voor zorgen dat bepaalde informatie overbodig wordt om in te vullen, wat opnieuw voor tijdswinst voor de klant zorgt, daar is het chassisnummer een voorbeeld van.
+
 
 \subsection{Klantenervaring verbeteren}
 % TODO vind andere toepassingen van insurtech
+
 
 
 \subsection{Data extractie}
