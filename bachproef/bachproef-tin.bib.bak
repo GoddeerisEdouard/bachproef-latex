@@ -147,4 +147,29 @@
   year      = {2018},
 }
 
+@Article{8051033,
+  author  = {Ge, Zhiqiang and Song, Zhihuan and Ding, Steven X. and Huang, Biao},
+  title   = {Data Mining and Analytics in the Process Industry: The Role of Machine Learning},
+  doi     = {10.1109/ACCESS.2017.2756872},
+  pages   = {20590-20616},
+  volume  = {5},
+  journal = {IEEE Access},
+  year    = {2017},
+}
+
+@Book{chapagain2019hands,
+  author    = {Chapagain, Anish},
+  title     = {Hands-On Web Scraping with Python: Perform advanced scraping operations using various Python libraries and tools such as Selenium, Regex, and others},
+  publisher = {Packt Publishing Ltd},
+  year      = {2019},
+}
+
+@Book{Hester2006,
+  author    = {Nolan Hester},
+  date      = {2006},
+  title     = {FileMaker Pro 8 for Windows & Macintosh},
+  edition   = {1st},
+  publisher = {Peachpit},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
